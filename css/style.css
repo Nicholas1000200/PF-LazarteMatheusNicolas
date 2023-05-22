@@ -438,6 +438,11 @@ footer {
     }
 
     /*FINAL MEDIA QUERIES PAGE PRODUCTOS*/
+    /* INICIO MEDIA QUERIES PAGE INDEX */
+    .back-video{
+        height: 0;
+        width: 0;
+    }
 }
 
 /* FINAL MEDIA QUERIES - MOBILE*/
