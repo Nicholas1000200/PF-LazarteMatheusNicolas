@@ -365,6 +365,9 @@ footer {
 
 @media (max-width: 1023px) {
 
+    header{
+        height: 9vh;
+    }
     /*INICIO MEDIA QUERIES PAGE EL-MUNDO */
     .carousel {
         width: 0;
@@ -372,6 +375,7 @@ footer {
     }
 
     .container-fluid {
+        z-index: 1;
         background-color: white;
         --bs-navbar-color: black;
         --bs-navbar-hover-color: lightgray;
@@ -434,6 +438,9 @@ footer {
     }
     .contenedor-index-content h1{
         font-size: 15px;
+    }
+    .contenedor-index{
+        height: 85vh;
     }
 }
 
