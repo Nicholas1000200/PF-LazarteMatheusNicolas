@@ -45,16 +45,6 @@ header img {
 }
 
 /* FINAL CSS HEADER */
-.back-video {
-    position: absolute;
-    top: 50%;
-    bottom: 50%;
-    left: 40%;
-    right: 45%;
-    z-index: 1;
-
-}
-
 /* INICIO CSS INDEX */
 .contenedor-index {
     width: 100%;
@@ -440,8 +430,10 @@ footer {
     /*FINAL MEDIA QUERIES PAGE PRODUCTOS*/
     /* INICIO MEDIA QUERIES PAGE INDEX */
     .back-video{
-        height: 0;
-        width: 0;
+      display: none;
+    }
+    .contenedor-index-content h1{
+        font-size: 15px;
     }
 }
 
