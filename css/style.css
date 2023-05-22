@@ -440,6 +440,10 @@ footer {
     div.container.text-center.container.text-center article p {
         font-weight: bold;
     }
+    .btn.btn-primary{
+        color: black;
+        background-color: #ffffff87;
+    }
 
     /*FINAL MEDIA QUERIES PAGE PRODUCTOS*/
     /* INICIO MEDIA QUERIES PAGE INDEX */
