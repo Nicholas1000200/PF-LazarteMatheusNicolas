@@ -369,7 +369,8 @@ footer {
 @media (max-width: 1023px) {
 
     header{
-        height: 9vh;
+        height: 4.3vh;
+        overflow: hidden;
     }
     .logo-star-wars-header{
         display: none;
@@ -381,6 +382,7 @@ footer {
     }
 
     .container-fluid {
+        height: 100%;
         z-index: 1;
         background-color: white;
         --bs-navbar-color: black;
@@ -404,7 +406,7 @@ footer {
     }
 
     .cards-el-mundo {
-        flex-wrap: wrap;
+        flex-direction: column;
     }
 
     .cards-el-mundo .card {
