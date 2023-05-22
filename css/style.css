@@ -409,15 +409,19 @@ footer {
     }
 
     .titulo-el-mundo h1 {
-        font-size: 30px;
+        font-weight:bold;
+        font-size: 29px;
     }
-
+    .introduccion-el-mundo h2{
+        font-size: 25px;
+        font-weight: bold;
+    }
     .cards-el-mundo {
         flex-direction: column;
     }
 
     .cards-el-mundo .card {
-        margin: 0.5rem;
+        margin: 5.5rem;
     }
 
     /*FINAL MEDIA QUERIES PAGE EL-MUNDO*/
