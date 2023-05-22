@@ -371,6 +371,7 @@ footer {
     header{
         height: 4.3vh;
         overflow: hidden;
+        margin-bottom: 10px;
     }
     .logo-star-wars-header{
         display: none;
