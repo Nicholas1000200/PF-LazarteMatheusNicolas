@@ -367,7 +367,7 @@ footer {
 /*INICIO MEDIA QUERIES - MOBILE*/
 
 @media (max-width: 1023px) {
-
+    /*INICIO MEDIA QUERIES - GENERAL */
     header{
         height: 4.3vh;
         overflow: hidden;
@@ -376,6 +376,7 @@ footer {
     .logo-star-wars-header{
         display: none;
     }
+    /* FINAL MEDIA QUERIES - GENERAL */
     /*INICIO MEDIA QUERIES PAGE EL-MUNDO */
     .carousel {
         width: 0;
