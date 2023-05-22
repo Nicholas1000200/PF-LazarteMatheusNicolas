@@ -237,11 +237,16 @@ header img {
 .card-body h5 {
     font-weight: bold;
 }
-
-.btn.btn-primary {
+.btn.btn-primary{
+    color: black;
+    background-color: #ffffff87;
     font-weight: bold;
-    background-color: black;
     border-color: #100e17;
+}
+.btn-primary{
+    --bs-btn-hover-border-color:black!important;
+    --bs-btn-hover-color:black!important;
+    --bs-btn-hover-bg:white!important;
 }
 
 /* FINAL CSS EL-MUNDO */
@@ -440,10 +445,7 @@ footer {
     div.container.text-center.container.text-center article p {
         font-weight: bold;
     }
-    .btn.btn-primary{
-        color: black;
-        background-color: #ffffff87;
-    }
+
 
     /*FINAL MEDIA QUERIES PAGE PRODUCTOS*/
     /* INICIO MEDIA QUERIES PAGE INDEX */
