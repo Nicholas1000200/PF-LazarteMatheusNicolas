@@ -1,0 +1,60 @@
+/* INICIO  INDEX */
+.contenedor-index {
+    width: 100%;
+    height: 95.6vh;
+    background-image: url(../img/depositphotos_189328220-stock-illustration-perfect-starry-night-sky-background.jpg);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+
+    .back-video {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        filter: contrast(100%);
+    }
+
+    &-content {
+        text-align: center;
+
+        h1 {
+            font-size: 160px;
+            color: white;
+            font-weight: 600;
+        }
+
+        p {
+            font-style: italic;
+            font-size: 24px;
+            color: white;
+        }
+
+        a {
+            text-decoration: none;
+            display: inline-block;
+            font-size: 24px;
+            color: white;
+            padding: 14px 70px;
+            border: 2px solid white;
+            border-radius: 50px;
+            margin-top: 20px;
+            transition: 0.5s;
+
+            &:hover {
+                transition: 0.5s;
+                background-color: black;
+                color: whitesmoke;
+            }
+        }
+    }
+}
+
+/* FINAL INDEX */

@@ -1,0 +1,62 @@
+/* INICIO CSS PRODUCTOS */
+.contenedor-productos {
+    height: 96.5vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    .producto-datos {
+        height: 100%;
+        width: 50%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        left: 15%;
+
+        p {
+            font-weight: bold;
+            font-size: 150px;
+        }
+
+        &:has(.fancy:hover) {
+            .text:not(.fancy:hover) {
+                opacity: 0.1;
+            }
+        }
+    }
+
+    .producto-imagen {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        position: relative;
+
+        img {
+            position: relative;
+            width: 0;
+            flex-grow: 1;
+            top: 43%;
+            height: 15%;
+        }
+    }
+
+
+}
+
+.producto-bajar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        height: 65px;
+    }
+}
+
+.container.text-center .row .col article img {
+    height: 100px;
+    width: 100px;
+}
+
+/* FINAL CSS PRODUCTOS */

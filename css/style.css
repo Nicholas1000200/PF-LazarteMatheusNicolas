@@ -1,469 +1,400 @@
+/* BASE */
 * {
-    border: 0;
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
 
+/* LAYOUTS */
 /* INICIO CSS HEADER */
 header {
-    font-weight: bold;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 3.5vh;
-    background-color: black;
-    overflow: hidden;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 3.5vh;
+  background-color: black;
+  overflow: hidden;
 }
-
-
-.container-fluid {
-    --bs-navbar-color: white;
-    --bs-navbar-hover-color: lightgray;
-}
-
 header nav ul {
-    display: flex;
-    flex-direction: row;
-    vertical-align: middle;
+  display: flex;
+  flex-direction: row;
+  vertical-align: middle;
 }
-
 header nav ul li {
-    padding: 1rem;
-    list-style: none;
+  padding: 1rem;
+  list-style: none;
 }
-
 header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
-
 header img {
-    vertical-align: middle;
-    height: 100%;
-    width: 4vw;
+  vertical-align: middle;
+  height: 100%;
+  width: 4vw;
 }
-
+header .container-fluid {
+  --bs-navbar-color: white;
+  --bs-navbar-hover-color: lightgray;
+}
 
 /* FINAL CSS HEADER */
-/* INICIO CSS INDEX */
-.contenedor-index {
-    width: 100%;
-    height: 95.6vh;
-    background-image: url(../img/depositphotos_189328220-stock-illustration-perfect-starry-night-sky-background.jpg);
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 0;
-}
-
-.contenedor-index-content {
-    text-align: center;
-}
-
-.contenedor-index-content h1 {
-    font-size: 160px;
-    color: white;
-    font-weight: 600;
-}
-
-.contenedor-index-content p {
-    font-style: italic;
-    font-size: 24px;
-    color: white;
-}
-
-.contenedor-index-content a {
-    text-decoration: none;
-    display: inline-block;
-    font-size: 24px;
-    color: white;
-    padding: 14px 70px;
-    border: 2px solid white;
-    border-radius: 50px;
-    margin-top: 20px;
-    transition: 0.5s;
-}
-
-.contenedor-index-content a:hover {
-    transition: 0.5s;
-    background-color: black;
-    color: whitesmoke;
-}
-
-.back-video {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    filter: contrast(100%);
-}
-
-/* FINAL CSS INDEX */
-
-/* INICIO CSS CONTACTO */
-.contenedor-contacto {
-    height: 96.5vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.contacto-imagen {
-    height: 100%;
-    background-color: rgb(211, 211, 211);
-    display: flex;
-    justify-content: center;
-    width: 50%;
-    position: relative;
-}
-
-.contacto-imagen img {
-    position: relative;
-    top: 43%;
-    height: 15%;
-}
-
-.contacto-datos {
-    width: 50%;
-    position: relative;
-}
-
-.contacto-datos {
-    display: flex;
-    flex-direction: column;
-    padding: 1em;
-    font-weight: bold;
-}
-
-/* FINAL CSS CONTACTO */
-
-/* INICIO CSS EL-MUNDO */
-.contenedor-el-mundo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    overflow: hidden;
-}
-
-.carousel {
-    animation: carousel 3s linear infinite;
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
-
-}
-
-.block {
-    overflow: hidden;
-
-}
-
-.block img {
-    height: 350px;
-    width: 350px;
-}
-
-@keyframes carousel {
-    0% {
-        transform: translate3d(0, 0, 0);
-    }
-
-    100% {
-        transform: translate3d(calc(3 * -150px), 0, 0);
-    }
-}
-
-.titulo-el-mundo h1 {
-    font-size: 60px;
-    color: black;
-}
-
-.titulo-el-mundo p {
-    font-style: italic;
-    font-weight: bold;
-}
-
-.introduccion-el-mundo {
-    background-color: #100e17;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    border-radius: 10px;
-    box-shadow: -1rem 0 3rem #000;
-    padding: 4rem;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-}
-
-.introduccion-el-mundo h2 {
-    font-size: 40px;
-    color: white;
-}
-
-.introduccion-el-mundo p {
-    margin-top: 1rem;
-    text-align: left;
-    color: white;
-    font-weight: bold;
-
-}
-
-.cards-el-mundo {
-    display: flex;
-    flex-direction: row;
-    padding: 1rem;
-    font-weight: bold;
-}
-
-.cards-el-mundo .card {
-    background-color: #100e17;
-    color: white;
-    margin: 10rem;
-    border-radius: 10px;
-    box-shadow: -1rem 0 3rem #000;
-}
-
-.card-body h5 {
-    font-weight: bold;
-}
-.btn.btn-primary{
-    color: black;
-    background-color: #ffffff87;
-    font-weight: bold;
-    border-color: #100e17;
-}
-.btn-primary{
-    --bs-btn-hover-border-color:black!important;
-    --bs-btn-hover-color:black!important;
-    --bs-btn-hover-bg:white!important;
-}
-
-/* FINAL CSS EL-MUNDO */
-
-/* INICIO CSS PRODUCTOS */
-.contenedor-productos {
-    height: 96.5vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.producto-datos {
-    height: 100%;
-    width: 50%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    left: 15%;
-}
-
-.producto-datos p {
-    font-weight: bold;
-    font-size: 150px;
-}
-
-.producto-imagen {
-    display: flex;
-    justify-content: center;
-    width: 50%;
-    position: relative;
-}
-
-.producto-imagen img {
-    position: relative;
-    width: 0;
-    flex-grow: 1;
-    top: 43%;
-    height: 15%;
-}
-
-.producto-bajar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.producto-bajar img {
-    height: 65px;
-}
-
-.producto-datos:has(.fancy:hover) .text:not(.fancy:hover) {
-    opacity: 0.1;
-}
-
-.container.text-center .row .col article img {
-    height: 100px;
-    width: 100px;
-}
-
-/* FINAL CSS PRODUCTOS */
-
-/* INICIO CSS CARRITO */
-.contenedor-carrito {
-    display: flex;
-    height: 96.5vh;
-    width: 100%;
-}
-
-.carrito-imagen {
-    height: 100%;
-    background-color: rgb(211, 211, 211);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 70%;
-    position: relative;
-}
-
-.carrito-imagen img {
-    height: 500px;
-    width: 500px;
-    position: relative;
-
-}
-
-.carrito-datos {
-    width: 25%;
-    position: relative;
-
-}
-
-.carrito-datos {
-    padding: 1em;
-    font-weight: bold;
-}
-
-.boton-carrito {
-    display: flex;
-    justify-content: center;
-    margin-top: 5rem;
-
-}
-
-/* FINAL CSS CARRITO */
-
 /* INICIO CSS FOOTER */
 footer {
-    font-weight: bold;
-    color: white;
-    height: 6vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
+  font-weight: bold;
+  color: white;
+  height: 6vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
 }
 
 /* FINAL CSS FOOTER */
-
-
-/*INICIO MEDIA QUERIES - MOBILE*/
-
-@media (max-width: 1023px) {
-    /*INICIO MEDIA QUERIES - GENERAL */
-    header{
-        height: 4.3vh;
-        overflow: hidden;
-        margin-bottom: 10px;
-    }
-    .logo-star-wars-header{
-        display: none;
-    }
-    /* FINAL MEDIA QUERIES - GENERAL */
-    /*INICIO MEDIA QUERIES PAGE EL-MUNDO */
-    .carousel {
-        width: 0;
-        height: 0;
-    }
-
-    .container-fluid {
-        height: 100%;
-        z-index: 1;
-        background-color: white;
-        --bs-navbar-color: black;
-        --bs-navbar-hover-color: lightgray;
-    }
-
-    .navbar {
-        width: 100%;
-    }
-
-    .navbar-nav a {
-        text-align: center;
-        font-weight: bold;
-        border: 2px solid;
-        margin: 0.5rem;
-        border-radius: 1rem;
-    }
-
-    .titulo-el-mundo h1 {
-        font-weight:bold;
-        font-size: 29px;
-    }
-    .introduccion-el-mundo h2{
-        font-size: 25px;
-        font-weight: bold;
-    }
-    .cards-el-mundo {
-        flex-direction: column;
-    }
-
-    .cards-el-mundo .card {
-        margin: 5.5rem;
-    }
-
-    /*FINAL MEDIA QUERIES PAGE EL-MUNDO*/
-    /*INICIO MEDIA QUERIES PAGE PRODUCTOS*/
-    .producto-imagen {
-        height: 0;
-        width: 0;
-    }
-
-    .producto-datos p {
-        width: 100%;
-        font-size: 90px;
-    }
-
-    .producto-bajar img {
-        height: 0;
-        width: 0;
-    }
-
-    div.container.text-center.container.text-center article img {
-        height: 300px;
-        width: 300px;
-    }
-
-    div.container.text-center.container.text-center article p {
-        font-weight: bold;
-    }
-
-
-    /*FINAL MEDIA QUERIES PAGE PRODUCTOS*/
-    /* INICIO MEDIA QUERIES PAGE INDEX */
-    .back-video{
-      display: none;
-    }
-    .contenedor-index-content h1{
-        font-size: 35px;
-    }
-    .contenedor-index{
-        background-color: #000;
-        height: 85vh;
-    }
-
+/* PAGES */
+/* INICIO CSS CARRITO */
+.contenedor-carrito {
+  display: flex;
+  height: 96.5vh;
+  width: 100%;
+}
+.contenedor-carrito .carrito-imagen {
+  height: 100%;
+  background-color: rgb(211, 211, 211);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 70%;
+  position: relative;
+}
+.contenedor-carrito .carrito-imagen img {
+  height: 500px;
+  width: 500px;
+  position: relative;
+}
+.contenedor-carrito .carrito-datos {
+  width: 25%;
+  position: relative;
+  padding: 1em;
+  font-weight: bold;
+}
+.contenedor-carrito .boton-carrito {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
 }
 
+/* FINAL CSS CARRITO */
+/* INICIO CSS EL-MUNDO */
+.contenedor-el-mundo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+}
+.contenedor-el-mundo .carousel {
+  animation: carousel 3s linear infinite;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+.contenedor-el-mundo .carousel .block {
+  overflow: hidden;
+}
+.contenedor-el-mundo .carousel .block img {
+  height: 350px;
+  width: 350px;
+}
+@keyframes carousel {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-450px, 0, 0);
+  }
+}
+.contenedor-el-mundo .titulo-el-mundo h1 {
+  font-size: 60px;
+  color: black;
+}
+.contenedor-el-mundo .titulo-el-mundo p {
+  font-style: italic;
+  font-weight: bold;
+}
+.contenedor-el-mundo .introduccion-el-mundo {
+  background-color: #100e17;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #000;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.contenedor-el-mundo .introduccion-el-mundo h2 {
+  font-size: 40px;
+  color: white;
+}
+.contenedor-el-mundo .introduccion-el-mundo p {
+  margin-top: 1rem;
+  text-align: left;
+  color: white;
+  font-weight: bold;
+}
+.contenedor-el-mundo .cards-el-mundo {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  font-weight: bold;
+}
+.contenedor-el-mundo .cards-el-mundo .card {
+  background-color: #100e17;
+  color: white;
+  margin: 10rem;
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #000;
+}
+.contenedor-el-mundo .cards-el-mundo .card .card-body h5 {
+  font-weight: bold;
+}
+.contenedor-el-mundo .cards-el-mundo .card .card-body .btn.btn-primary {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.5294117647);
+  font-weight: bold;
+  border-color: #100e17;
+  --bs-btn-hover-border-color: black !important;
+  --bs-btn-hover-color: black !important;
+  --bs-btn-hover-bg: white !important;
+}
+
+/* FINAL CSS EL-MUNDO */
+/* INICIO CSS CONTACTO */
+.contenedor-contacto {
+  height: 96.5vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.contenedor-contacto .contacto-imagen {
+  height: 100%;
+  background-color: rgb(211, 211, 211);
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  position: relative;
+}
+.contenedor-contacto .contacto-imagen img {
+  position: relative;
+  top: 43%;
+  height: 15%;
+}
+.contenedor-contacto .contacto-datos {
+  width: 50%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  font-weight: bold;
+}
+
+/* FINAL CSS CONTACTO */
+/* INICIO  INDEX */
+.contenedor-index {
+  width: 100%;
+  height: 95.6vh;
+  background-image: url(../img/depositphotos_189328220-stock-illustration-perfect-starry-night-sky-background.jpg);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+}
+.contenedor-index .back-video {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  filter: contrast(100%);
+}
+.contenedor-index-content {
+  text-align: center;
+}
+.contenedor-index-content h1 {
+  font-size: 160px;
+  color: white;
+  font-weight: 600;
+}
+.contenedor-index-content p {
+  font-style: italic;
+  font-size: 24px;
+  color: white;
+}
+.contenedor-index-content a {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  color: white;
+  padding: 14px 70px;
+  border: 2px solid white;
+  border-radius: 50px;
+  margin-top: 20px;
+  transition: 0.5s;
+}
+.contenedor-index-content a:hover {
+  transition: 0.5s;
+  background-color: black;
+  color: whitesmoke;
+}
+
+/* FINAL INDEX */
+/* INICIO CSS PRODUCTOS */
+.contenedor-productos {
+  height: 96.5vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.contenedor-productos .producto-datos {
+  height: 100%;
+  width: 50%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 15%;
+}
+.contenedor-productos .producto-datos p {
+  font-weight: bold;
+  font-size: 150px;
+}
+.contenedor-productos .producto-datos:has(.fancy:hover) .text:not(.fancy:hover) {
+  opacity: 0.1;
+}
+.contenedor-productos .producto-imagen {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  position: relative;
+}
+.contenedor-productos .producto-imagen img {
+  position: relative;
+  width: 0;
+  flex-grow: 1;
+  top: 43%;
+  height: 15%;
+}
+
+.producto-bajar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.producto-bajar img {
+  height: 65px;
+}
+
+.container.text-center .row .col article img {
+  height: 100px;
+  width: 100px;
+}
+
+/* FINAL CSS PRODUCTOS */
+/* MEDIA QUERIES */
+/*INICIO MEDIA QUERIES - MOBILE*/
+@media (max-width: 1023px) {
+  /*INICIO MEDIA QUERIES - GENERAL */
+  header {
+    height: 4.3vh;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+  .logo-star-wars-header {
+    display: none;
+  }
+  /* FINAL MEDIA QUERIES - GENERAL */
+  /*INICIO MEDIA QUERIES PAGE EL-MUNDO */
+  .carousel {
+    width: 0;
+    height: 0;
+  }
+  .container-fluid {
+    height: 100%;
+    z-index: 1;
+    background-color: white;
+    --bs-navbar-color: black !important;
+    --bs-navbar-hover-color: lightgray;
+  }
+  .navbar {
+    width: 100%;
+  }
+  .navbar-nav a {
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid;
+    margin: 0.5rem;
+    border-radius: 1rem;
+  }
+  .titulo-el-mundo h1 {
+    font-weight: bold;
+    font-size: 29px;
+  }
+  .introduccion-el-mundo h2 {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .cards-el-mundo {
+    flex-direction: column !important;
+  }
+  .cards-el-mundo .card {
+    margin: 5.5rem;
+  }
+  /*FINAL MEDIA QUERIES PAGE EL-MUNDO*/
+  /*INICIO MEDIA QUERIES PAGE PRODUCTOS*/
+  .producto-imagen {
+    height: 0;
+    width: 0;
+  }
+  .producto-datos p {
+    width: 100%;
+    font-size: 90px;
+  }
+  .producto-bajar img {
+    height: 0;
+    width: 0;
+  }
+  div.container.text-center.container.text-center article img {
+    height: 300px;
+    width: 300px;
+  }
+  div.container.text-center.container.text-center article p {
+    font-weight: bold;
+  }
+  /*FINAL MEDIA QUERIES PAGE PRODUCTOS*/
+  /* INICIO MEDIA QUERIES PAGE INDEX */
+  .back-video {
+    display: none;
+  }
+  .contenedor-index {
+    background-color: #000;
+    height: 85vh;
+  }
+  .contenedor-index-content h1 {
+    font-size: 35px;
+  }
+}
 /* FINAL MEDIA QUERIES - MOBILE*/
+
+/*# sourceMappingURL=style.css.map */

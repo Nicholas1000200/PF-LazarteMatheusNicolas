@@ -1,0 +1,108 @@
+/*INICIO MEDIA QUERIES - MOBILE*/
+
+@media (max-width: 1023px) {
+
+    /*INICIO MEDIA QUERIES - GENERAL */
+    header {
+        height: 4.3vh;
+        overflow: hidden;
+        margin-bottom: 10px;
+    }
+
+    .logo-star-wars-header {
+        display: none;
+    }
+
+    /* FINAL MEDIA QUERIES - GENERAL */
+    /*INICIO MEDIA QUERIES PAGE EL-MUNDO */
+    .carousel {
+        width: 0;
+        height: 0;
+    }
+
+    .container-fluid {
+        height: 100%;
+        z-index: 1;
+        background-color: white;
+        --bs-navbar-color: black !important;
+        --bs-navbar-hover-color: lightgray;
+    }
+
+    .navbar {
+        width: 100%;
+
+        &-nav {
+            a {
+                text-align: center;
+                font-weight: bold;
+                border: 2px solid;
+                margin: 0.5rem;
+                border-radius: 1rem;
+            }
+        }
+    }
+
+    .titulo-el-mundo h1 {
+        font-weight: bold;
+        font-size: 29px;
+    }
+
+    .introduccion-el-mundo h2 {
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .cards-el-mundo {
+        flex-direction: column!important;
+
+        .card {
+            margin: 5.5rem;
+        }
+    }
+
+    /*FINAL MEDIA QUERIES PAGE EL-MUNDO*/
+    /*INICIO MEDIA QUERIES PAGE PRODUCTOS*/
+    .producto-imagen {
+        height: 0;
+        width: 0;
+    }
+
+    .producto-datos p {
+        width: 100%;
+        font-size: 90px;
+    }
+
+    .producto-bajar img {
+        height: 0;
+        width: 0;
+    }
+
+    div.container.text-center.container.text-center article img {
+        height: 300px;
+        width: 300px;
+    }
+
+    div.container.text-center.container.text-center article p {
+        font-weight: bold;
+    }
+
+
+    /*FINAL MEDIA QUERIES PAGE PRODUCTOS*/
+    /* INICIO MEDIA QUERIES PAGE INDEX */
+    .back-video {
+        display: none;
+    }
+
+    .contenedor-index {
+        background-color: #000;
+        height: 85vh;
+
+        &-content {
+            h1 {
+                font-size: 35px;
+            }
+        }
+    }
+}
+
+/* FINAL MEDIA QUERIES - MOBILE*/

@@ -1,0 +1,105 @@
+/* INICIO CSS EL-MUNDO */
+.contenedor-el-mundo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+
+    .carousel {
+        animation: carousel 3s linear infinite;
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+
+        .block {
+            overflow: hidden;
+
+            img {
+                height: 350px;
+                width: 350px;
+            }
+        }
+
+        @keyframes carousel {
+            0% {
+                transform: translate3d(0, 0, 0);
+            }
+
+            100% {
+                transform: translate3d(calc(3 * -150px), 0, 0);
+            }
+        }
+    }
+
+    .titulo-el-mundo {
+        h1 {
+            font-size: 60px;
+            color: black;
+        }
+
+        p {
+            font-style: italic;
+            font-weight: bold;
+        }
+    }
+
+    .introduccion-el-mundo {
+        background-color: #100e17;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        border-radius: 10px;
+        box-shadow: -1rem 0 3rem #000;
+        padding: 4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+        h2 {
+            font-size: 40px;
+            color: white;
+        }
+
+        p {
+            margin-top: 1rem;
+            text-align: left;
+            color: white;
+            font-weight: bold;
+        }
+    }
+
+    .cards-el-mundo {
+        display: flex;
+        flex-direction: row;
+        padding: 1rem;
+        font-weight: bold;
+
+        .card {
+            background-color: #100e17;
+            color: white;
+            margin: 10rem;
+            border-radius: 10px;
+            box-shadow: -1rem 0 3rem #000;
+
+            .card-body {
+                h5 {
+                    font-weight: bold;
+                }
+
+                .btn.btn-primary {
+                    color: black;
+                    background-color: #ffffff87;
+                    font-weight: bold;
+                    border-color: #100e17;
+                    --bs-btn-hover-border-color: black !important;
+                    --bs-btn-hover-color: black !important;
+                    --bs-btn-hover-bg: white !important;
+                }
+            }
+        }
+    }
+}
+
+/* FINAL CSS EL-MUNDO */
