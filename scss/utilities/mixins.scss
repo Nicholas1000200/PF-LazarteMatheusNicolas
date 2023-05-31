@@ -1,0 +1,12 @@
+@mixin centrarContenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin sombraBordes {
+    background-color: #100e17;
+    margin: 5rem;
+    border-radius: 10px;
+    box-shadow: -1rem 0 3rem #000;
+}

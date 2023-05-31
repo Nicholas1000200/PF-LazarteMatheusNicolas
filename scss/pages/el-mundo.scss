@@ -1,3 +1,5 @@
+@import '../utilities/mixins.scss';
+
 /* INICIO CSS EL-MUNDO */
 .contenedor-el-mundo {
     display: flex;
@@ -7,35 +9,36 @@
     text-align: center;
     width: 100%;
     overflow: hidden;
-
+    .super_carrousel{
+        border: 1px solid #000;
+        width:85vw;
+        overflow: hidden;
+    }
     .carousel {
-        animation: carousel 3s linear infinite;
+        animation: carousel 10s linear infinite;
         display: flex;
         flex-direction: row;
-        overflow: hidden;
-
+        width: calc(250px * 18);
+        
         .block {
             overflow: hidden;
-
+            
             img {
                 height: 350px;
-                width: 350px;
+                width: 250px;
+                object-fit: cover;
             }
         }
 
         @keyframes carousel {
-            0% {
-                transform: translate3d(0, 0, 0);
-            }
-
-            100% {
-                transform: translate3d(calc(3 * -150px), 0, 0);
-            }
+            0% { transform: translateX(0); }
+            100% { transform: translateX(calc(-250px * 9))}
         }
     }
 
     .titulo-el-mundo {
         h1 {
+            margin-top: 5rem;
             font-size: 60px;
             color: black;
         }
@@ -47,11 +50,7 @@
     }
 
     .introduccion-el-mundo {
-        background-color: #100e17;
-        margin-left: 5rem;
-        margin-right: 5rem;
-        border-radius: 10px;
-        box-shadow: -1rem 0 3rem #000;
+        @include sombraBordes;
         padding: 4rem;
         display: flex;
         flex-direction: column;
@@ -77,11 +76,8 @@
         font-weight: bold;
 
         .card {
-            background-color: #100e17;
+            @include sombraBordes;
             color: white;
-            margin: 10rem;
-            border-radius: 10px;
-            box-shadow: -1rem 0 3rem #000;
 
             .card-body {
                 h5 {
