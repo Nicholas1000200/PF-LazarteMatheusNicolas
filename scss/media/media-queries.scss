@@ -4,11 +4,20 @@
 
     /*INICIO MEDIA QUERIES - GENERAL */
     header {
-        height: 4.3vh;
+        height: 0vh;
+        background-color: black;
         overflow: hidden;
         margin-bottom: 10px;
     }
-
+    nav.navbar{
+        background-color: #000;
+    }
+    .container-fluid{
+        background-color: black!important;
+    }
+    .navbar-toggler{
+        background-color:white!important;
+    }
     .logo-star-wars-header {
         display: none;
     }
@@ -23,9 +32,8 @@
     .container-fluid {
         height: 100%;
         z-index: 1;
-        background-color: white;
-        --bs-navbar-color: black !important;
-        --bs-navbar-hover-color: lightgray;
+
+
     }
 
     .navbar {
@@ -95,7 +103,6 @@
 
     .contenedor-index {
         background-color: #000;
-        height: 85vh;
 
         &-content {
             h1 {

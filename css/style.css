@@ -268,7 +268,7 @@ footer {
 /* FINAL INDEX */
 /* INICIO CSS PRODUCTOS */
 .contenedor-productos {
-  height: 96.5vh;
+  height: 86.5vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -295,40 +295,83 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
   width: 50%;
   position: relative;
 }
 .contenedor-productos .producto-imagen img {
   position: relative;
-  width: 0;
-  flex-grow: 1;
+  width: 300px;
   top: 43%;
-  height: 15%;
+  height: 300px;
 }
 
-.producto-bajar {
+.boton-galeria-prod {
+  height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.producto-bajar img {
-  height: 65px;
+.boton-galeria-prod a {
+  background-color: black;
+  /* Green */
+  border: 1px solid black;
+  border-radius: 2rem;
+  color: white;
+  padding: 1rem;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 35px;
+  font-weight: bold;
+  transition: 0.5s;
 }
-
-.container.text-center .row .col article img {
-  height: 100px;
-  width: 100px;
+.boton-galeria-prod a:hover {
+  transition: 0.5s;
+  background-color: rgba(87, 82, 82, 0.637);
+  color: black;
 }
 
 /* FINAL CSS PRODUCTOS */
+.galeria-prod {
+  height: 96.5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.galeria-prod h1 {
+  font-weight: bold;
+}
+.galeria-prod .col article img {
+  height: 350px;
+  width: 350px;
+}
+.galeria-prod .col article p {
+  font-weight: bold;
+}
+.galeria-prod .col article button img {
+  height: 40px;
+  width: 40px;
+}
+
 /* MEDIA QUERIES */
 /*INICIO MEDIA QUERIES - MOBILE*/
 @media (max-width: 1023px) {
   /*INICIO MEDIA QUERIES - GENERAL */
   header {
-    height: 4.3vh;
+    height: 0vh;
+    background-color: black;
     overflow: hidden;
     margin-bottom: 10px;
+  }
+  nav.navbar {
+    background-color: #000;
+  }
+  .container-fluid {
+    background-color: black !important;
+  }
+  .navbar-toggler {
+    background-color: white !important;
   }
   .logo-star-wars-header {
     display: none;
@@ -342,9 +385,6 @@ footer {
   .container-fluid {
     height: 100%;
     z-index: 1;
-    background-color: white;
-    --bs-navbar-color: black !important;
-    --bs-navbar-hover-color: lightgray;
   }
   .navbar {
     width: 100%;
@@ -398,7 +438,6 @@ footer {
   }
   .contenedor-index {
     background-color: #000;
-    height: 85vh;
   }
   .contenedor-index-content h1 {
     font-size: 35px;
