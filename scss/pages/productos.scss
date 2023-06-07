@@ -2,7 +2,7 @@
 
 /* INICIO CSS PRODUCTOS */
 .contenedor-productos {
-    height: 86.5vh;
+    height: 80.5vh;
     width: 100%;
     @include centrarContenido;
 
@@ -31,7 +31,7 @@
     .producto-imagen {
         @include centrarContenido;
         flex-direction: column;
-        flex-wrap: wrap;
+
         width: 50%;
         position: relative;
 

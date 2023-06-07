@@ -20,12 +20,20 @@
     }
 
     .contacto-datos {
+        h1{
+            font-weight: bold;
+        }
+        height: 100%;
         width: 50%;
         position: relative;
         display: flex;
+        justify-content: center;
         flex-direction: column;
-        padding: 1em;
+        padding: 3rem;
         font-weight: bold;
+        .form-contacto{
+            margin-top:3rem;
+        }
     }
 }
 

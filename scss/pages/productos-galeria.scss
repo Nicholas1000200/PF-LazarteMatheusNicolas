@@ -1,24 +1,30 @@
 @import '../utilities/mixins.scss';
 
 .galeria-prod {
-    height: 96.5vh;
+    max-height: 96.5vh;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     @include centrarContenido;
 
     h1 {
-        font-weight:bold;
+        font-weight: bold;
     }
 
     .col {
+
         article {
             img {
                 height: 350px;
                 width: 350px;
+
             }
-            p{
-                font-weight:bold;
+
+            p {
+                font-weight: bold;
             }
-            button{
-                img{
+
+            button {
+                img {
                     height: 40px;
                     width: 40px;
                 }

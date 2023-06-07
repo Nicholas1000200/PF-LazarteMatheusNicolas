@@ -70,9 +70,13 @@
 
     /*FINAL MEDIA QUERIES PAGE EL-MUNDO*/
     /*INICIO MEDIA QUERIES PAGE PRODUCTOS*/
+    .contenedor-productos{
+        display: flex;
+        flex-direction: column;
+    }
     .producto-imagen {
-        height: 0;
-        width: 0;
+        display: flex;
+        flex-direction: column;
     }
 
     .producto-datos p {
