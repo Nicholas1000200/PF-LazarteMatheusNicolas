@@ -1,23 +1,28 @@
 /*INICIO MEDIA QUERIES - MOBILE*/
 
-@media (max-width: 1023px) {
+@media (min-width: 320px) and (max-width: 1024px) {
 
     /*INICIO MEDIA QUERIES - GENERAL */
     header {
-        height: 0vh;
+        height: 3.5vh;
+        width: 100%;
         background-color: black;
         overflow: hidden;
         margin-bottom: 10px;
     }
-    nav.navbar{
+
+    nav.navbar {
         background-color: #000;
     }
-    .container-fluid{
-        background-color: black!important;
+
+    .container-fluid {
+        background-color: black !important;
     }
-    .navbar-toggler{
-        background-color:white!important;
+
+    .navbar-toggler {
+        background-color: white !important;
     }
+
     .logo-star-wars-header {
         display: none;
     }
@@ -52,7 +57,7 @@
 
     .titulo-el-mundo h1 {
         font-weight: bold;
-        font-size: 30px!important;
+        font-size: 30px !important;
     }
 
     .introduccion-el-mundo h2 {
@@ -61,7 +66,7 @@
     }
 
     .cards-el-mundo {
-        flex-direction: column!important;
+        flex-direction: column !important;
 
         .card {
             margin: 5.5rem;
@@ -70,16 +75,19 @@
 
     /*FINAL MEDIA QUERIES PAGE EL-MUNDO*/
     /*INICIO MEDIA QUERIES PAGE PRODUCTOS*/
-    .contenedor-productos{
-
-    }
     .producto-imagen {
+        display: flex;
+        flex-direction: column;
 
+        img {
+            height: 0 !important;
+            width: 0 !important;
+        }
     }
 
     .producto-datos p {
-        width: 100%!important;
-        font-size: 90px!important;
+        width: 100% !important;
+        font-size: 90px !important;
     }
 
     .producto-bajar img {
@@ -88,8 +96,8 @@
     }
 
     div.container.text-center.container.text-center article img {
-        height: 300px!important;
-        width: 300px!important;
+        height: 300px;
+        width: 300px;
     }
 
     div.container.text-center.container.text-center article p {
