@@ -1,3 +1,4 @@
+@import '../utilities/mixins.scss';
 /*INICIO MEDIA QUERIES - MOBILE*/
 
 @media (min-width: 320px) and (max-width: 1024px) {
@@ -28,102 +29,7 @@
     }
 
     /* FINAL MEDIA QUERIES - GENERAL */
-    /*INICIO MEDIA QUERIES PAGE EL-MUNDO */
-    .carousel {
-        width: 0;
-        height: 0;
-    }
 
-    .container-fluid {
-        height: 100%;
-        z-index: 1;
-
-
-    }
-
-    .navbar {
-        width: 100%;
-
-        &-nav {
-            a {
-                text-align: center;
-                font-weight: bold;
-                border: 2px solid;
-                margin: 0.5rem;
-                border-radius: 1rem;
-            }
-        }
-    }
-
-    .titulo-el-mundo h1 {
-        font-weight: bold;
-        font-size: 30px !important;
-    }
-
-    .introduccion-el-mundo h2 {
-        font-size: 25px;
-        font-weight: bold;
-    }
-
-    .cards-el-mundo {
-        flex-direction: column !important;
-
-        .card {
-            margin: 5.5rem;
-        }
-    }
-
-    /*FINAL MEDIA QUERIES PAGE EL-MUNDO*/
-    /*INICIO MEDIA QUERIES PAGE PRODUCTOS*/
-    .producto-imagen {
-        display: flex;
-        flex-direction: column;
-
-        img {
-            height: 0 !important;
-            width: 0 !important;
-        }
-    }
-
-    .producto-datos p {
-        width: 100% !important;
-        font-size: 90px !important;
-    }
-
-    .producto-bajar img {
-        height: 0;
-        width: 0;
-    }
-
-    .boton-galeria-prod{
-        margin-bottom: 4rem;
-        a{
-            font-size: 25px;
-        }
-    }
-    /* INICIO MEDIA QUERIES PAGE PRODUCTOS-GALERIA */
-    .galeria-prod{
-        display: flex;
-        flex-direction: column;
-        .h1-productos{
-            margin-top: 1rem;
-        }
-        .col{
-            article{
-                img{
-                    height: 200px;
-                    width: 200px;
-                }
-                p{
-                    font-weight: bold;
-                }
-            }
-        }
-    }
-    /* FINAL MEDIA QUERIES PAGE PRODUCTOS-GALERIA */
-
-
-    /*FINAL MEDIA QUERIES PAGE PRODUCTOS*/
     /* INICIO MEDIA QUERIES PAGE INDEX */
     .back-video {
         display: none;
@@ -138,6 +44,182 @@
             }
         }
     }
+
+
+/* FINAL MEDIA QUERIES PAGE INDEX */
+
+/*INICIO MEDIA QUERIES PAGE EL-MUNDO */
+.carousel {
+    width: 0;
+    height: 0;
 }
 
+.container-fluid {
+    height: 100%;
+    z-index: 1;
+
+
+}
+
+.navbar {
+    width: 100%;
+
+    &-nav {
+        a {
+            text-align: center;
+            font-weight: bold;
+            border: 2px solid;
+            margin: 0.5rem;
+            border-radius: 1rem;
+        }
+    }
+}
+
+.titulo-el-mundo h1 {
+    font-weight: bold;
+    font-size: 30px !important;
+}
+
+.introduccion-el-mundo h2 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.cards-el-mundo {
+    flex-direction: column !important;
+
+    .card {
+        margin: 5.5rem;
+    }
+}
+
+/*FINAL MEDIA QUERIES PAGE EL-MUNDO*/
+
+/*INICIO MEDIA QUERIES PAGE PRODUCTOS*/
+.producto-imagen {
+    display: flex;
+    flex-direction: column;
+
+    img {
+        height: 0 !important;
+        width: 0 !important;
+    }
+}
+
+.producto-datos p {
+    width: 100% !important;
+    font-size: 90px !important;
+}
+
+.producto-bajar img {
+    height: 0;
+    width: 0;
+}
+
+.boton-galeria-prod {
+    margin-bottom: 4rem;
+
+    a {
+        font-size: 25px;
+    }
+}
+
+/* INICIO MEDIA QUERIES PAGE PRODUCTOS-GALERIA */
+.galeria-prod {
+    display: flex;
+    flex-direction: column;
+
+    .h1-productos {
+        margin-top: 1rem;
+    }
+
+    .col {
+        article {
+            img {
+                height: 200px;
+                width: 200px;
+            }
+
+            p {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+/* FINAL MEDIA QUERIES PAGE PRODUCTOS-GALERIA */
+
+
+/*FINAL MEDIA QUERIES PAGE PRODUCTOS*/
+
+/* INICIO MEDIA QUERIES PAGE CARRITO */
+.contenedor-carrito{
+    display: flex;
+    flex-direction: column;
+    .carrito-imagen{
+        height: 50%;
+        width: 100%;
+        overflow:scroll;
+        .container.text-center{
+            height: 100%;
+            .row{
+                margin: 0;
+            }
+        }
+        
+        .col{
+            margin: 1rem 0 1rem 0;
+
+            article{
+                img{
+                    height: 120px;
+                    width: 100px;
+                }
+                .data-prod{
+                    font-size: 12px;
+                }
+                .botones-mod-y-del{
+                    margin-left: 1rem;
+                    @include centrarContenido;
+                    flex-direction: column;
+                    font-size: 12px;
+                    a{
+                        margin: 0.5rem 0 0.5rem 0;
+                    }
+                }
+            }
+        }
+    }
+    .carrito-datos{
+        height: 50%;
+        width: 100%;
+        .boton-carrito{
+            padding:0;
+            font-size: 15px;
+            margin-top: 3rem;
+            .boton-1{
+                margin-right: 1rem;
+            }
+            .boton-2{
+                margin-left: 1rem;
+            }
+        }
+    }
+}
+/* FINAL MEDIA QUERIES PAGE CARRITO */
+/* INICIO MEDIA QUERIES PAGE CONTACTO */
+.contenedor-contacto{
+    display: flex;
+    flex-direction: column;
+    .contacto-imagen{
+        width: 100%;
+        height: auto;
+    }
+    .contacto-datos{
+        width: 100%;
+
+    }
+}
+/* FINAL MEDIA QUERIES PAGE CONTACTO */
 /* FINAL MEDIA QUERIES - MOBILE*/
+}
