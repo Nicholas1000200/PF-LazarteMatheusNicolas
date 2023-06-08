@@ -479,6 +479,12 @@ footer {
   div.container.text-center.container.text-center article p {
     font-weight: bold;
   }
+  .boton-galeria-prod {
+    margin-bottom: 4rem;
+  }
+  .boton-galeria-prod a {
+    font-size: 25px;
+  }
   /*FINAL MEDIA QUERIES PAGE PRODUCTOS*/
   /* INICIO MEDIA QUERIES PAGE INDEX */
   .back-video {
