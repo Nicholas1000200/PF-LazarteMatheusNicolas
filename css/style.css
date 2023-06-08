@@ -375,7 +375,6 @@ footer {
 
 /* FINAL CSS PRODUCTOS */
 .galeria-prod {
-  max-height: 96.5vh;
   margin-top: 1rem;
   margin-bottom: 1rem;
   display: flex;
@@ -472,19 +471,29 @@ footer {
     height: 0;
     width: 0;
   }
-  div.container.text-center.container.text-center article img {
-    height: 300px;
-    width: 300px;
-  }
-  div.container.text-center.container.text-center article p {
-    font-weight: bold;
-  }
   .boton-galeria-prod {
     margin-bottom: 4rem;
   }
   .boton-galeria-prod a {
     font-size: 25px;
   }
+  /* INICIO MEDIA QUERIES PAGE PRODUCTOS-GALERIA */
+  .galeria-prod {
+    display: flex;
+    flex-direction: column;
+  }
+  .galeria-prod .col article img {
+    height: 200px;
+    width: 200px;
+  }
+  div.container.text-center.container.text-center article p {
+    font-weight: bold;
+  }
+  .col article img {
+    height: 25px;
+    width: 25px;
+  }
+  /* FINAL MEDIA QUERIES PAGE PRODUCTOS-GALERIA */
   /*FINAL MEDIA QUERIES PAGE PRODUCTOS*/
   /* INICIO MEDIA QUERIES PAGE INDEX */
   .back-video {

@@ -95,20 +95,38 @@
         width: 0;
     }
 
-    div.container.text-center.container.text-center article img {
-        height: 300px;
-        width: 300px;
-    }
-
-    div.container.text-center.container.text-center article p {
-        font-weight: bold;
-    }
     .boton-galeria-prod{
         margin-bottom: 4rem;
         a{
             font-size: 25px;
         }
     }
+    /* INICIO MEDIA QUERIES PAGE PRODUCTOS-GALERIA */
+    .galeria-prod{
+        display: flex;
+        flex-direction: column;
+        .col{
+            article{
+                img{
+                    height: 200px;
+                    width: 200px;
+                }
+            }
+        }
+    }
+
+    div.container.text-center.container.text-center article p {
+        font-weight: bold;
+    }
+    .col{
+        article{
+            img{
+                height: 25px;
+                width: 25px;
+            }
+        }
+    }
+    /* FINAL MEDIA QUERIES PAGE PRODUCTOS-GALERIA */
 
 
     /*FINAL MEDIA QUERIES PAGE PRODUCTOS*/
