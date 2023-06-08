@@ -105,24 +105,18 @@
     .galeria-prod{
         display: flex;
         flex-direction: column;
+        .h1-productos{
+            margin-top: 1rem;
+        }
         .col{
             article{
                 img{
                     height: 200px;
                     width: 200px;
                 }
-            }
-        }
-    }
-
-    div.container.text-center.container.text-center article p {
-        font-weight: bold;
-    }
-    .col{
-        article{
-            img{
-                height: 25px;
-                width: 25px;
+                p{
+                    font-weight: bold;
+                }
             }
         }
     }

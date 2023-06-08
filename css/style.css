@@ -482,16 +482,15 @@ footer {
     display: flex;
     flex-direction: column;
   }
+  .galeria-prod .h1-productos {
+    margin-top: 1rem;
+  }
   .galeria-prod .col article img {
     height: 200px;
     width: 200px;
   }
-  div.container.text-center.container.text-center article p {
+  .galeria-prod .col article p {
     font-weight: bold;
-  }
-  .col article img {
-    height: 25px;
-    width: 25px;
   }
   /* FINAL MEDIA QUERIES PAGE PRODUCTOS-GALERIA */
   /*FINAL MEDIA QUERIES PAGE PRODUCTOS*/
