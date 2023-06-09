@@ -420,6 +420,7 @@ footer {
   }
   nav.navbar {
     background-color: #000;
+    z-index: 1;
   }
   .container-fluid {
     background-color: black !important;
@@ -499,6 +500,7 @@ footer {
   .boton-galeria-prod a {
     font-size: 25px;
   }
+  /*FINAL MEDIA QUERIES PAGE PRODUCTOS*/
   /* INICIO MEDIA QUERIES PAGE PRODUCTOS-GALERIA */
   .galeria-prod {
     display: flex;
@@ -515,7 +517,6 @@ footer {
     font-weight: bold;
   }
   /* FINAL MEDIA QUERIES PAGE PRODUCTOS-GALERIA */
-  /*FINAL MEDIA QUERIES PAGE PRODUCTOS*/
   /* INICIO MEDIA QUERIES PAGE CARRITO */
   .contenedor-carrito {
     display: flex;
