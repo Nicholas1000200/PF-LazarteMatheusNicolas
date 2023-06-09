@@ -9,20 +9,22 @@
     text-align: center;
     width: 100%;
     overflow: hidden;
-    .super_carrousel{
+
+    .super_carrousel {
         border: 1px solid #000;
-        width:85vw;
+        width: 85vw;
         overflow: hidden;
     }
+
     .carousel {
         animation: carousel 10s linear infinite;
         display: flex;
         flex-direction: row;
         width: calc(250px * 18);
-        
+
         .block {
             overflow: hidden;
-            
+
             img {
                 height: 350px;
                 width: 250px;
@@ -31,8 +33,13 @@
         }
 
         @keyframes carousel {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(calc(-250px * 9))}
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(calc(-250px * 9))
+            }
         }
     }
 
