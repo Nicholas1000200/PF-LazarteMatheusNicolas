@@ -166,7 +166,6 @@
                 margin: 0;
             }
         }
-        
         .col{
             margin: 1rem 0 1rem 0;
 
@@ -193,6 +192,8 @@
     .carrito-datos{
         height: 50%;
         width: 100%;
+        background-color:#100e17 ;
+        color: whitesmoke;
         .boton-carrito{
             padding:0;
             font-size: 15px;
@@ -212,11 +213,13 @@
 .contenedor-contacto{
     display: flex;
     flex-direction: column;
+
     .contacto-imagen{
         width: 100%;
         height: auto;
     }
     .contacto-datos{
+        height: auto;
         width: 100%;
 
     }
