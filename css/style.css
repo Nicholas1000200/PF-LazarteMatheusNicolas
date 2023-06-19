@@ -326,6 +326,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 .contenedor-productos .producto-datos {
   height: 100%;
@@ -581,12 +582,18 @@ footer {
     flex-direction: column;
   }
   .contenedor-contacto .contacto-imagen {
+    position: relative;
     width: 100%;
     height: auto;
   }
   .contenedor-contacto .contacto-datos {
+    position: relative;
     height: auto;
     width: 100%;
+  }
+  footer {
+    position: fixed;
+    bottom: 0;
   }
   /* FINAL MEDIA QUERIES PAGE CONTACTO */
   /* FINAL MEDIA QUERIES - MOBILE*/
