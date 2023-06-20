@@ -7,7 +7,8 @@
 
     .contacto-imagen {
         height: 100%;
-        background-color: rgb(211, 211, 211);
+
+        background: linear-gradient(135DEG,#F2F2F2 82%, #bdc3c7 3% ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         display: flex;
         justify-content: center;
         width: 50%;

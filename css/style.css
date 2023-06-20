@@ -46,7 +46,7 @@ header .container-fluid {
 footer {
   font-weight: bold;
   color: white;
-  height: 6vh;
+  height: 76px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -236,7 +236,7 @@ footer {
 }
 .contenedor-contacto .contacto-imagen {
   height: 100%;
-  background-color: rgb(211, 211, 211);
+  background: linear-gradient(135DEG, #F2F2F2 82%, #bdc3c7 3%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   display: flex;
   justify-content: center;
   width: 50%;
@@ -292,7 +292,7 @@ footer {
   text-align: center;
 }
 .contenedor-index-content h1 {
-  font-size: 160px;
+  font-size: 100px;
   color: white;
   font-weight: 600;
 }
