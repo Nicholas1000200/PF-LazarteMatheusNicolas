@@ -204,6 +204,7 @@ footer {
   display: flex;
   flex-direction: row;
   padding: 1rem;
+  margin-bottom: 4rem;
   font-weight: bold;
 }
 .contenedor-el-mundo .cards-el-mundo .card {
